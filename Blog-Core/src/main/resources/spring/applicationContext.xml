@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<context:annotation-config/>
+	<context:component-scan base-package="cn.com"/>
+	<context:property-placeholder location="classpath:jdbc.properties"/>
+	<context:property-placeholder location="classpath:mongodb.properties"/>
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="${databaseDriver}"/>
+		<property name="url" value="${url}"/>
+		<property name="username" value="${username}"/>
+		<property name="password" value="${password}"/>
+		<property name="initialSize" value="1"/>
+		<property name="minIdle" value="1"/>
+		<property name="maxActive" value="100"/>  
+		<property name="maxIdle" value="20"/>  
+		<property name="maxWait" value="1000"/> 
+	</bean>
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="configLocation" value="classpath:/mapper/SqlMapConfig.xml"></property>
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="cn.com.mapper"></property>
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+	</bean>
+
+	<!-- mongoDB的配置对象 -->
+	     <bean id="mongoOptions" class="com.mongodb.MongoOptions">
+	         <property name="connectionsPerHost" value="10" />
+	         <!-- 连接超时时间(毫秒)，默认为10000 -->
+	         <property name="connectTimeout" value="10000" />
+	         <!-- 是否创建一个finalize方法，以便在客户端没有关闭DBCursor的实例时，清理掉它。默认为true -->
+	         <property name="cursorFinalizerEnabled" value="true" />
+	        <!-- 线程等待连接可用的最大时间(毫秒)，默认为120000 -->
+	         <property name="maxWaitTime" value="120000" />
+	         <!-- 可等待线程倍数，默认为5.例如connectionsPerHost最大允许10个连接，则10*5=50个线程可以等待，更多的线程将直接抛异常 -->
+	         <property name="threadsAllowedToBlockForConnectionMultiplier" value="5" />
+	        <!-- socket读写时超时时间(毫秒)，默认为0，不超时 -->
+	         <property name="socketTimeout" value="0" />
+	         <!-- 是socket连接在防火墙上保持活动的特性，默认为false -->
+	        <property name="socketKeepAlive" value="false" />
+	         <!-- 对应全局的WriteConcern.SAFE，默认为false -->
+	         <property name="safe" value="true" />
+	        <!-- 对应全局的WriteConcern中的w，默认为0 -->
+	         <property name="w" value="0" />
+	         <!-- 对应全局的WriteConcern中的wtimeout，默认为0 -->
+         <property name="wtimeout" value="0" />
+	         <!-- 对应全局的WriteConcern.FSYNC_SAFE，如果为真，每次写入要等待写入磁盘，默认为false -->
+	         <property name="fsync" value="false" />
+	         <!-- 对应全局的WriteConcern.JOURNAL_SAFE，如果为真，每次写入要等待日志文件写入磁盘，默认为false -->
+	        <property name="j" value="false" />
+	    </bean>
+
+	     <!-- 使用工厂创建mongo实例 -->
+	     <bean id="mongo" class="cn.com.morphia.MongoFactoryBean">
+	         <!-- mongoDB的配置对象 -->
+	         <property name="mongoOptions" ref="mongoOptions"/>
+	         <!-- 是否主从分离(读取从库)，默认为false，读写都在主库 -->
+	        <property name="readSecondary" value="false"/>
+
+	         <!-- 设定写策略，默认为WriteConcern.SAFE，优先级高于mongoOptions中的safe -->
+	         <property name="writeConcern" value="SAFE"/>
+
+	         <!-- 设定服务器列表，默认为localhost:27017 -->
+	         <property name="serverStrings">
+	             <array>
+	                <value>localhost:27017</value>
+	             </array>
+	         </property>
+	     </bean>
+
+	    <!-- 使用工厂创建morphia实例，同时完成类映射操作 -->
+	    <bean id="morphia" class="cn.com.morphia.MorphiaFactoryBean" >
+	         <!-- 指定要扫描的POJO包路径 -->
+	        <property name="mapPackages">
+	             <array>
+	                 <value>cn.com.domain</value>
+	             </array>
+	         </property>
+	    </bean>
+
+	     <!-- 使用工厂创建datastore，同时完成index和caps的确认操作 -->
+		<bean id="datastore" class="cn.com.morphia.DatastoreFactoryBean" >
+	       <property name="morphia" ref="morphia"/>
+	        <property name="mongo" ref="mongo"/>
+
+	         <!-- collection的名称 -->
+	        <property name="dbName" value="files"/>
+	         <!-- 用户名和密码可以为空 -->
+	         <!-- <property name="username" value="my_username"/>
+ 93         <property name="password" value="my_password"/> -->
+
+	         <!-- 是否进行index和caps的确认操作，默认为flase -->
+	        <property name="toEnsureIndexes" value="true"/>
+	         <property name="isToEnsureCaps" value="true"/>
+	    </bean>
+
+	 <!--与ecache整合-->
+	<!-- 引用ehCache的配置 -->
+	<bean id="defaultCacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+		<property name="configLocation">
+			<value>classpath:ehcache.xml</value>
+		</property>
+	</bean>
+
+	<!-- 定义ehCache的工厂，并设置所使用的Cache name -->
+	<bean id="ehCache" class="org.springframework.cache.ehcache.EhCacheFactoryBean">
+		<property name="cacheManager">
+			<ref local="defaultCacheManager"/>
+		</property>
+		<property name="cacheName">
+			<value>DEFAULT_CACHE</value>
+		</property>
+	</bean>
+</beans>

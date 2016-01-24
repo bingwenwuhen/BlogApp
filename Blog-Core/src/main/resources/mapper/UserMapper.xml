@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace命名空间，作用就是对sql进行分类化管理，理解sql隔离
+	注意：使用mapper代理方法开发，namespace有着特殊作用
+ -->
+<mapper namespace="cn.com.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="cn.com.domain.User">
+        <id column="id" property="id" javaType="java.lang.Long"></id>
+        <result column="username" property="username" javaType="java.lang.String"/>
+        <result column="password" property="password" javaType="java.lang.String"/>
+        <result column="age" property="age" javaType="java.lang.Integer"/>
+        <result column="job" property="job" javaType="java.lang.String"/>
+        <result column="address" property="address" javaType="java.lang.String"/>
+        <result column="email" property="email" javaType="java.lang.String"/>
+    </resultMap>
+
+</mapper>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+	<bean id="logPerformanceInteceptor" class="cn.com.log.LogPerformanceInteceptor">
+	</bean>
+	<aop:config>
+		<!--切入点-->
+		<aop:pointcut id="loginPoint"
+					  expression="execution(public * cn.com.*.*.*(..)) "/>
+		<!--在该切入点使用自定义拦截器-->
+		<aop:advisor pointcut-ref="loginPoint" advice-ref="logPerformanceInteceptor"/>
+	</aop:config>
+
+
+	<bean id="jedisPool" class="redis.clients.jedis.ShardedJedisPool">
+		<constructor-arg index="0" ref="jedisPoolConfig"/>
+		<constructor-arg index="1">
+			<list>
+				<bean name="master" class="redis.clients.jedis.JedisShardInfo">
+					<constructor-arg index="0" value="localhost"/>
+					<constructor-arg index="1" value="6379" type="int"/>
+				</bean>
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxTotal" value="2048"/>
+		<property name="maxIdle" value="200"/>
+		<property name="numTestsPerEvictionRun" value="1024"/>
+		<property name="timeBetweenEvictionRunsMillis" value="300000"/>
+		<property name="minEvictableIdleTimeMillis" value="-1"/>
+		<property name="softMinEvictableIdleTimeMillis" value="10000" />
+		<property name="maxWaitMillis" value="1500"/>
+		<property name="testOnBorrow" value="true" />
+		<property name="testWhileIdle" value="true"/>
+		<property name="testOnReturn" value="false"/>
+		<property name="jmxEnabled" value="true"/>
+		<property name="jmxNamePrefix" value="pool"/>
+		<property name="blockWhenExhausted" value="false"/>
+	</bean>
+</beans>

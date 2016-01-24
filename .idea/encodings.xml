@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Blog-Common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Blog-Common/src/main/java/cn/com/exception/ExceptionMessage.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Blog-Common/src/main/java/cn/com/md5/MD5keyBean.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Blog-Common/src/main/resources/spring/applicationContext.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Blog-Core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Blog-Core/src/main/resources/mapper/SqlMapConfig.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Blog-Core/src/main/resources/spring/applicationContext.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Blog-User" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Blog-Web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Blog-Web/src/main/resources/springmvc/springmvc.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Blog-Web/src/main/webapp/resources/css/login/reset.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Blog-Web/src/main/webapp/resources/css/login/style.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Blog-Web/src/main/webapp/resources/css/login/supersized.css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Blog-Web/src/main/webapp/resources/images/login/1.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Blog-Web/src/main/webapp/resources/images/login/2.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Blog-Web/src/main/webapp/resources/images/login/3.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Blog-Web/src/main/webapp/resources/js/login/supersized-init.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Blog-Web/src/main/webapp/resources/js/login/supersized.3.2.7.min.js" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
