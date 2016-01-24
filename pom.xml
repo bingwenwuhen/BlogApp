@@ -43,6 +43,8 @@
     <aspectj.version>1.7.3</aspectj.version>
     <commons-pool2.version>2.4.2</commons-pool2.version>
     <beanutils.version>1.9.2</beanutils.version>
+    <quartz.version>2.2.2</quartz.version>
+    <c3p0.version>0.9.5.2</c3p0.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -277,6 +279,18 @@
         <groupId>commons-beanutils</groupId>
         <artifactId>commons-beanutils</artifactId>
         <version>${beanutils.version}</version>
+      </dependency>
+
+      <!--quartz-->
+      <dependency>
+        <groupId>org.quartz-scheduler</groupId>
+        <artifactId>quartz</artifactId>
+        <version>${quartz.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.mchange</groupId>
+        <artifactId>c3p0</artifactId>
+        <version>${c3p0.version}</version>
       </dependency>
 
     </dependencies>
