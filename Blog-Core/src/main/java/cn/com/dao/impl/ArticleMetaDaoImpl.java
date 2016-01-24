@@ -47,6 +47,7 @@ public class ArticleMetaDaoImpl implements ArticleMetaDao {
     @Override
     public List<ArticleMeta> loadArticleRecently() {
         return datastore.createQuery(ArticleMeta.class).field("createTime").lessThanOrEq(new Date())
-                .field("createTime").greaterThanOrEq(new Date((new Date().getTime() - 43200000))).asList();
+                .field("createTime").greaterThanOrEq(new Date((new Date().getTime() - 43200000)))
+                .field("type").notEqual(ARTICLESTATUS.DELETE.ordinal()).asList();
     }
 }

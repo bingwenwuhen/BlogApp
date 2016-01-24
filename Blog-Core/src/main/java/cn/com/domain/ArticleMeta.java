@@ -46,7 +46,7 @@ public class ArticleMeta {
     private String articleName;
 
     /**
-     * 文章状态,1表示正常，2表示保存中，3表示修改
+     * 文章状态,1表示正常，2表示保存中，3表示删除
      */
     private Integer status;
 
