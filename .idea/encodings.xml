@@ -3,7 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Blog-Common" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Blog-Common/src/main/java/cn/com/exception/ExceptionMessage.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/Blog-Common/src/main/java/cn/com/exception/ExceptionMessage.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Blog-Core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Blog-User" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Blog-Web" charset="UTF-8" />

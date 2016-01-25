@@ -5,5 +5,5 @@ package cn.com.exception;
  */
 public class ExceptionMessage {
 
-    public static final String BEAN_NOT_FOUND = "ÄúÒª·ÃÎÊµÄ·şÎñÃû³Æ[%s]²»´æÔÚ";
+    public static final String BEAN_NOT_FOUND = "æ‚¨è¦è®¿é—®çš„æœåŠ¡åç§°[%s]ä¸å­˜åœ¨";
 }

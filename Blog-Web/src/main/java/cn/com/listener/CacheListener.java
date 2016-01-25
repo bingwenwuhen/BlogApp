@@ -11,6 +11,7 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.ShardedJedis;
 import redis.clients.jedis.ShardedJedisPool;
 
+import javax.annotation.PreDestroy;
 import javax.inject.Singleton;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
@@ -35,20 +36,24 @@ public class CacheListener implements ServletContextListener{
         ArticleMetaService articleMetaService = (ArticleMetaService) ServiceProvinder.getService("articleMetaService");
         List<ArticleMeta> articleMetas = articleMetaService.loadArticleRecently();
         try {
-            jedis.set("RecentlyArticles", new ObjectMapper().writeValueAsString(articleMetas));
+            if (articleMetas != null && articleMetas.size() > 0) {
+                jedis.set("RecentlyArticles", new ObjectMapper().writeValueAsString(articleMetas));
+            }
         } catch (IOException e) {
             e.printStackTrace();
             log.error("error:{}", e);
         }
         ArticleService articleService = (ArticleService) ServiceProvinder.getService("articleService");
-        for (ArticleMeta articleMeta: articleMetas) {
-            Article article = articleService.loadArticle(articleMeta.getArticleId());
-            //将文章元数据信息以及文章均放到缓存中
-            try {
-                jedis.set(articleMeta.getId().toString(), new ObjectMapper().writeValueAsString(articleMeta));
-                jedis.set(article.getId(), new ObjectMapper().writeValueAsString(article));
-            } catch (IOException e) {
-                e.printStackTrace();
+        if (articleMetas != null &&  articleMetas.size() > 0) {
+            for (ArticleMeta articleMeta: articleMetas) {
+                Article article = articleService.loadArticle(articleMeta.getArticleId());
+                //将文章元数据信息以及文章均放到缓存中
+                try {
+                    jedis.set(articleMeta.getId().toString(), new ObjectMapper().writeValueAsString(articleMeta));
+                    jedis.set(article.getId(), new ObjectMapper().writeValueAsString(article));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
         jedis.close();
@@ -65,11 +70,13 @@ public class CacheListener implements ServletContextListener{
             e.printStackTrace();
         }
         //将这个key删除
-        jedis.del("RecentlyArticles");
-        for (ArticleMeta articleMeta: articleMetas) {
-           //将文章元数据与文章均删除
-            jedis.del(articleMeta.getId().toString());
-            jedis.del(articleMeta.getArticleId());
+        if (articleMetas != null) {
+            jedis.del("RecentlyArticles");
+            for (ArticleMeta articleMeta: articleMetas) {
+                //将文章元数据与文章均删除
+                jedis.del(articleMeta.getId().toString());
+                jedis.del(articleMeta.getArticleId());
+            }
         }
         jedis.close();
     }

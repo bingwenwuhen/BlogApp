@@ -95,18 +95,17 @@
 	        <property name="dbName" value="files"/>
 	         <!-- 用户名和密码可以为空 -->
 	         <!-- <property name="username" value="my_username"/>
- 93         <property name="password" value="my_password"/> -->
+	         <property name="password" value="my_password"/> -->
 
 	         <!-- 是否进行index和caps的确认操作，默认为flase -->
 	        <property name="toEnsureIndexes" value="true"/>
 	         <property name="isToEnsureCaps" value="true"/>
 	    </bean>
 
-	 <!--与ecache整合-->
 	<!-- 引用ehCache的配置 -->
 	<bean id="defaultCacheManager" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
 		<property name="configLocation">
-			<value>classpath:ehcache.xml</value>
+			<value>classpath:/ehcache.xml</value>
 		</property>
 	</bean>
 
