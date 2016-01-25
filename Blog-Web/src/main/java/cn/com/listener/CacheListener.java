@@ -11,6 +11,7 @@ import redis.clients.jedis.Jedis;
 import redis.clients.jedis.ShardedJedis;
 import redis.clients.jedis.ShardedJedisPool;
 
+import javax.inject.Singleton;
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
@@ -23,6 +24,7 @@ import java.util.List;
  */
 @WebListener
 @Slf4j
+@Singleton
 public class CacheListener implements ServletContextListener{
 
     @Override
