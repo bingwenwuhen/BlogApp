@@ -11,13 +11,11 @@ import javax.annotation.PreDestroy;
 public class DestoryCacheQuartz {
 
 
+    /**
+     * 在此处定时刷新缓存
+     */
     public void run() {
 
     }
 
-
-    @PreDestroy
-    public void destory() {
-
-    }
 }
