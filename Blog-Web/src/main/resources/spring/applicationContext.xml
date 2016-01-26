@@ -9,7 +9,10 @@
     <context:annotation-config/>
     <context:component-scan base-package="cn.com"/>
 
-    <bean id="eventBus" class="com.google.common.eventbus.EventBus">
+    <bean id="executorFactory" class="cn.com.factory.ExecutorFactory" />
+    <bean id="executor" factory-bean="executorFactory" factory-method="getExecutorService"></bean>
+    <bean id="eventBus" class="com.google.common.eventbus.AsyncEventBus">
+        <constructor-arg ref="executor" />
     </bean>
     <bean id="clientEventHandler" class="cn.com.Event.Handler.ClientEventHandler" scope="singleton">
     </bean>
