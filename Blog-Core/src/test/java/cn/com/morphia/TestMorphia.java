@@ -28,4 +28,8 @@ public class TestMorphia {
         datastore.save(u);
         System.out.println(datastore);
     }
+
+    public void testAddArticleMeta() {
+        Datastore datastore = (Datastore) context.getBean("datastore");
+    }
 }
