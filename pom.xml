@@ -45,6 +45,7 @@
     <beanutils.version>1.9.2</beanutils.version>
     <quartz.version>2.2.2</quartz.version>
     <c3p0.version>0.9.5.2</c3p0.version>
+    <thumbnailator.version>0.4.8</thumbnailator.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -296,6 +297,12 @@
         <groupId>com.mchange</groupId>
         <artifactId>c3p0</artifactId>
         <version>${c3p0.version}</version>
+      </dependency>
+      <!--thumbnailator-->
+      <dependency>
+        <groupId>net.coobird</groupId>
+        <artifactId>thumbnailator</artifactId>
+        <version>${thumbnailator.version}</version>
       </dependency>
 
     </dependencies>
