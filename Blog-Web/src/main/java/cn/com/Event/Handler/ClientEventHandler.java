@@ -21,7 +21,7 @@ import javax.inject.Singleton;
 public class ClientEventHandler {
 
     @Inject
-    private EventBus eventBus;
+    private AsyncEventBus eventBus;
 
     @Inject
     private IUserService userService;
