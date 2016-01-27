@@ -2,11 +2,9 @@ package cn.com.Event.Handler;
 
 import cn.com.Event.Events.ClientEvent;
 import cn.com.domain.User;
-import cn.com.mapper.UserMapper;
 import cn.com.service.IUserService;
 import cn.com.web.ClientUtils;
 import com.google.common.eventbus.AsyncEventBus;
-import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
 import eu.bitwalker.useragentutils.UserAgent;
 

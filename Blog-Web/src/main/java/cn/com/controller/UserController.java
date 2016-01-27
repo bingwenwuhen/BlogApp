@@ -3,7 +3,7 @@ package cn.com.controller;
 import cn.com.Event.Events.ClientEvent;
 import cn.com.domain.User;
 import cn.com.service.IUserService;
-import com.google.common.eventbus.EventBus;
+import com.google.common.eventbus.AsyncEventBus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -26,7 +26,7 @@ public class UserController {
     private IUserService userService;
 
     @Inject
-    private EventBus eventBus;
+    private AsyncEventBus eventBus;
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login() {
@@ -53,7 +53,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public String register(HttpServletRequest request, User user) {
+    public String register(User user) {
         userService.addUser(user);
         return "login";
     }
