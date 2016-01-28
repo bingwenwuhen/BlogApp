@@ -10,6 +10,7 @@
     <module>Blog-User</module>
     <module>Blog-Core</module>
     <module>Blog-Common</module>
+    <module>Blog-Files</module>
   </modules>
   <name>BlogApp</name>
   <url>http://maven.apache.org</url>

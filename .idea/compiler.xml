@@ -17,20 +17,46 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+      <profile default="false" name="Annotation profile for Blog-Common" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="Blog-Common" />
+      </profile>
+      <profile default="false" name="Annotation profile for Blog-Core" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="Blog-Core" />
+      </profile>
+      <profile default="false" name="Annotation profile for Blog-User" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="Blog-User" />
+      </profile>
+      <profile default="false" name="Annotation profile for Blog-Web" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="Blog-Web" />
+      </profile>
+      <profile default="false" name="Annotation profile for Blog-Files" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="Blog-Files" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Blog-Common" target="1.7" />
       <module name="Blog-Core" target="1.7" />
+      <module name="Blog-Files" target="1.7" />
       <module name="Blog-User" target="1.7" />
       <module name="Blog-Web" target="1.7" />
       <module name="BlogApp" target="1.5" />
