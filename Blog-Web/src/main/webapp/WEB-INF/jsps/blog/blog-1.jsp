@@ -194,11 +194,11 @@
 
             <li>
               <p class="posts_list_pic">
-                <a href="<c:url value='/resources/post.html"><img src="images/post-tn1.jpg" alt="" /></a>
+                <a href="post.html"><img src="images/post-tn1.jpg" alt="" /></a>
               </p>
 
               <p class="posts_list_excerpt">
-                <a href="<c:url value='/resources/post.html"><strong>Mauris nec velit tortor quis </strong></a>
+                <a href="post.html"><strong>Mauris nec velit tortor quis </strong></a>
                 <br />March 14, 2012
               </p>
             </li>
@@ -210,10 +210,10 @@
           <h3>Archives</h3>
 
           <ul class="archives">
-            <li><a href="<c:url value='/resources/#" title="March 2012">March 2012</a></li>
-            <li><a href="<c:url value='/resources/#" title="February 2012">February 2012</a></li>
-            <li><a href="<c:url value='/resources/#" title="January 2012">January 2012</a></li>
-            <li><a href="<c:url value='/resources/#" title="December 2011">December 2011</a></li>
+            <li><a href="#" title="March 2012">March 2012</a></li>
+            <li><a href="#" title="February 2012">February 2012</a></li>
+            <li><a href="#" title="January 2012">January 2012</a></li>
+            <li><a href="#" title="December 2011">December 2011</a></li>
           </ul>
         </div>
 
