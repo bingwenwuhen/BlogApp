@@ -250,13 +250,13 @@
 
       <!-- LOGO -->
       <div id="logo">
-        <a href="<c:url value='/resources/index.html"><img src="images/logo.png" alt="" /></a>
+        <a href="index.html"><img src="images/logo.png" alt="" /></a>
       </div>
 
       <!-- MENU -->
       <ul id="menu">
-        <li><a href="<c:url value='/resources/index.html">HOME</a></li>
-        <li class="current"><a href="<c:url value='/resources/blog-1.html">BLOG</a>
+        <li><a href="index.html">HOME</a></li>
+        <li class="current"><a href="blog-1.html">BLOG</a>
           <ul>
             <li><a href="<c:url value='/resources/blog-1.html">BLOG STYLE #1</a></li>
             <li><a href="<c:url value='/resources/blog-2.html">BLOG STYLE #2</a></li>
