@@ -183,11 +183,11 @@
 
             <li>
               <p class="posts_list_pic">
-                <a href="<c:url value='/resources/post.html"><img src="images/post-tn1.jpg" alt="" /></a>
+                <a href="post.html"><img src="images/post-tn1.jpg" alt="" /></a>
               </p>
 
               <p class="posts_list_excerpt">
-                <a href="<c:url value='/resources/post.html"><strong>Lorem ipsum dolor sit amet</strong></a>
+                <a href="post.html"><strong>Lorem ipsum dolor sit amet</strong></a>
                 <br />January 28, 2012
               </p>
             </li>
