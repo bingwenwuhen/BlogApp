@@ -258,14 +258,14 @@
         <li><a href="index.html">HOME</a></li>
         <li class="current"><a href="blog-1.html">BLOG</a>
           <ul>
-            <li><a href="<c:url value='/resources/blog-1.html">BLOG STYLE #1</a></li>
-            <li><a href="<c:url value='/resources/blog-2.html">BLOG STYLE #2</a></li>
+            <li><a href="blog-1.html">BLOG STYLE #1</a></li>
+            <li><a href="blog-2.html">BLOG STYLE #2</a></li>
           </ul>
         </li>
-        <li><a href="<c:url value='/resources/portfolio-3c.html">PORTFOLIO</a>
+        <li><a href="portfolio-3c.html">PORTFOLIO</a>
           <ul>
-            <li><a href="<c:url value='/resources/portfolio-3c.html">PORTFOLIO &#8211; 3 COLUMNS</a></li>
-            <li><a href="<c:url value='/resources/portfolio-2c.html">PORTFOLIO &#8211; 2 COLUMNS</a></li>
+            <li><a href="portfolio-3c.html">PORTFOLIO &#8211; 3 COLUMNS</a></li>
+            <li><a href="portfolio-2c.html">PORTFOLIO &#8211; 2 COLUMNS</a></li>
           </ul>
         </li>
         <li><a href="gallery.html">GALLERY</a></li>
