@@ -268,14 +268,14 @@
             <li><a href="<c:url value='/resources/portfolio-2c.html">PORTFOLIO &#8211; 2 COLUMNS</a></li>
           </ul>
         </li>
-        <li><a href="<c:url value='/resources/gallery.html">GALLERY</a></li>
-        <li><a href="<c:url value='/resources/#">STYLINGS</a>
+        <li><a href="gallery.html">GALLERY</a></li>
+        <li><a href="#">STYLINGS</a>
           <ul>
-            <li><a href="<c:url value='/resources/stylings-texts.html">TEXTS</a></li>
-            <li><a href="<c:url value='/resources/stylings-table_columns.html">TABLE &#038; COLUMNS</a></li>
-            <li><a href="<c:url value='/resources/stylings-tabs_toggles.html">TABS, TOGGLES &#038; CAROUSEL</a></li>
-            <li><a href="<c:url value='/resources/stylings-images_videos.html">IMAGES &#038; VIDEOS</a></li>
-            <li><a href="<c:url value='/resources/stylings-contact_buttons.html">CONTACT FORM &#038; BUTTONS</a></li>
+            <li><a href="stylings-texts.html">TEXTS</a></li>
+            <li><a href="stylings-table_columns.html">TABLE &#038; COLUMNS</a></li>
+            <li><a href="stylings-tabs_toggles.html">TABS, TOGGLES &#038; CAROUSEL</a></li>
+            <li><a href="stylings-images_videos.html">IMAGES &#038; VIDEOS</a></li>
+            <li><a href="stylings-contact_buttons.html">CONTACT FORM &#038; BUTTONS</a></li>
           </ul>
         </li>
       </ul>
@@ -284,9 +284,9 @@
 
     <!-- SOCIAL ICONS ON SIDEBAR'S BOTTOM PART -->
     <ul id="sidebar-bottom">
-      <li><a href="<c:url value='/resources/#"><img src="images/sidebar_icons/facebook.png" alt="" /></a></li>
-      <li><a href="<c:url value='/resources/#"><img src="images/sidebar_icons/twitter.png" alt="" /></a></li>
-      <li><a href="<c:url value='/resources/#"><img src="images/sidebar_icons/rss.png" alt="" /></a></li>
+      <li><a href="#"><img src="images/sidebar_icons/facebook.png" alt="" /></a></li>
+      <li><a href="#"><img src="images/sidebar_icons/twitter.png" alt="" /></a></li>
+      <li><a href="#"><img src="images/sidebar_icons/rss.png" alt="" /></a></li>
     </ul>
 
     <!-- COPYRIGHT TEXT -->
