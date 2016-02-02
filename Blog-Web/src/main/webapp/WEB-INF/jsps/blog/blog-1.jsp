@@ -56,14 +56,14 @@
 
 <!-- STYLER FOR DEMO -->
 <div id="styler">
-  <div id="styler-button"><a href="<c:url value='/resources/#"><img src="images/styler-button.png" alt="" /></a></div>
+  <div id="styler-button"><a href="#"><img src="images/styler-button.png" alt="" /></a></div>
 
   <div class="styler-title"><img src="images/styler-t1.png" alt="" /></div>
 
   <ul id="texture">
-    <li><a href="<c:url value='/resources/#" id="styler-texture-1">None</a></li>
-    <li id="selected"><a href="<c:url value='/resources/#" id="styler-texture-2">Leather</a></li>
-    <li><a href="<c:url value='/resources/#" id="styler-texture-3">Carbon</a></li>
+    <li><a href="#" id="styler-texture-1">None</a></li>
+    <li id="selected"><a href="#" id="styler-texture-2">Leather</a></li>
+    <li><a href="#" id="styler-texture-3">Carbon</a></li>
   </ul>
 
   <div class="styler-title"><img src="images/styler-t2.png" alt="" /></div>
@@ -88,7 +88,7 @@
       <ul id="blog-small">
         <li>
           <div class="blog-small-image">
-            <a href="<c:url value='/resources/post.html"><span class="imghover_small_blog"></span><img src="images/post1.jpg" alt="" /></a>
+            <a href="post.html"><span class="imghover_small_blog"></span><img src="images/post1.jpg" alt="" /></a>
           </div>
           <div class="blog-small-text">
             <h1><a href="<c:url value='/resources/post.html">Mauris nec velit tortor, quis euismod</a></h1>
@@ -107,10 +107,10 @@
 
         <li>
           <div class="blog-small-image">
-            <a href="<c:url value='/resources/post.html"><span class="imghover_small_blog"></span><img src="images/post1.jpg" alt="" /></a>
+            <a href="post.html"><span class="imghover_small_blog"></span><img src="images/post1.jpg" alt="" /></a>
           </div>
           <div class="blog-small-text">
-            <h1><a href="<c:url value='/resources/post.html">Praesent vitae velit convallis sapien</a></h1>
+            <h1><a href="post.html">Praesent vitae velit convallis sapien</a></h1>
 
             <p class="blog-info">&nbsp;<img src="images/icon-time.png" alt="" />&nbsp;March 14, 2012&nbsp;
               <img src="images/sep.gif" alt="" />&nbsp;&nbsp;<img src="images/icon-category.png" alt="" /><a href="<c:url value='/resources/#">News</a>, <a href="<c:url value='/resources/#">Travel</a>&nbsp;&nbsp;<img src="images/sep.gif" alt="" />&nbsp;&nbsp;
@@ -126,17 +126,17 @@
 
         <li>
           <div class="blog-small-image">
-            <a href="<c:url value='/resources/post.html"><span class="imghover_small_blog"></span><img src="images/post1.jpg" alt="" /></a>
+            <a href="post.html"><span class="imghover_small_blog"></span><img src="images/post1.jpg" alt="" /></a>
           </div>
           <div class="blog-small-text">
-            <h1><a href="<c:url value='/resources/post.html">Lorem ipsum dolor sit amet</a></h1>
+            <h1><a href="post.html">Lorem ipsum dolor sit amet</a></h1>
 
             <p class="blog-info">&nbsp;<img src="images/icon-time.png" alt="" />&nbsp;March 14, 2012&nbsp;
-              <img src="images/sep.gif" alt="" />&nbsp;&nbsp;<img src="images/icon-category.png" alt="" /><a href="<c:url value='/resources/#">News</a>, <a href="<c:url value='/resources/#">Travel</a>&nbsp;&nbsp;<img src="images/sep.gif" alt="" />&nbsp;&nbsp;
+              <img src="images/sep.gif" alt="" />&nbsp;&nbsp;<img src="images/icon-category.png" alt="" /><a href="#">News</a>, <a href="#">Travel</a>&nbsp;&nbsp;<img src="images/sep.gif" alt="" />&nbsp;&nbsp;
               <img src="images/icon-comment.png" alt="" />&nbsp;0 Comment(s)
             </p>
 
-            <p class="blog-small-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel enim sem, in vulputate augue. Praesent vitae velit convallis sapien varius accumsan sit amet eu lacus.  <br /><a href="<c:url value='/resources/post.html" class="read_more">Continue reading &rarr;</a></p>
+            <p class="blog-small-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel enim sem, in vulputate augue. Praesent vitae velit convallis sapien varius accumsan sit amet eu lacus.  <br /><a href="post.html" class="read_more">Continue reading &rarr;</a></p>
           </div>
         </li>
         <!-- POST SEPARATOR -->
@@ -145,7 +145,7 @@
 
         <li>
           <div class="blog-small-image">
-            <a href="<c:url value='/resources/post.html"><span class="imghover_small_blog"></span><img src="images/post1.jpg" alt="" /></a>
+            <a href="post.html"><span class="imghover_small_blog"></span><img src="images/post1.jpg" alt="" /></a>
           </div>
           <div class="blog-small-text">
             <h1><a href="<c:url value='/resources/post.html">Vestibulum ante ipsum primis</a></h1>
