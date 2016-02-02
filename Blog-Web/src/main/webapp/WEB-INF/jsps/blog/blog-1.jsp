@@ -91,14 +91,14 @@
             <a href="post.html"><span class="imghover_small_blog"></span><img src="images/post1.jpg" alt="" /></a>
           </div>
           <div class="blog-small-text">
-            <h1><a href="<c:url value='/resources/post.html">Mauris nec velit tortor, quis euismod</a></h1>
+            <h1><a href="post.html">Mauris nec velit tortor, quis euismod</a></h1>
 
             <p class="blog-info">&nbsp;<img src="images/icon-time.png" alt="" />&nbsp;March 14, 2012&nbsp;
-              <img src="images/sep.gif" alt="" />&nbsp;&nbsp;<img src="images/icon-category.png" alt="" /><a href="<c:url value='/resources/#">News</a>, <a href="<c:url value='/resources/#">Travel</a>&nbsp;&nbsp;<img src="images/sep.gif" alt="" />&nbsp;&nbsp;
+              <img src="images/sep.gif" alt="" />&nbsp;&nbsp;<img src="images/icon-category.png" alt="" /><a href="#">News</a>, <a href="#">Travel</a>&nbsp;&nbsp;<img src="images/sep.gif" alt="" />&nbsp;&nbsp;
               <img src="images/icon-comment.png" alt="" />&nbsp;0 Comment(s)
             </p>
 
-            <p class="blog-small-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel enim sem, in vulputate augue. Praesent vitae velit convallis sapien varius accumsan sit amet eu lacus.  <br /><a href="<c:url value='/resources/post.html" class="read_more">Continue reading &rarr;</a></p>
+            <p class="blog-small-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel enim sem, in vulputate augue. Praesent vitae velit convallis sapien varius accumsan sit amet eu lacus.  <br /><a href="post.html" class="read_more">Continue reading &rarr;</a></p>
           </div>
         </li>
         <!-- POST SEPARATOR -->
@@ -148,7 +148,7 @@
             <a href="post.html"><span class="imghover_small_blog"></span><img src="images/post1.jpg" alt="" /></a>
           </div>
           <div class="blog-small-text">
-            <h1><a href="<c:url value='/resources/post.html">Vestibulum ante ipsum primis</a></h1>
+            <h1><a href="post.html">Vestibulum ante ipsum primis</a></h1>
 
             <p class="blog-info">&nbsp;<img src="images/icon-time.png" alt="" />&nbsp;March 14, 2012&nbsp;
               <img src="images/sep.gif" alt="" />&nbsp;&nbsp;<img src="images/icon-category.png" alt="" /><a href="<c:url value='/resources/#">News</a>, <a href="<c:url value='/resources/#">Travel</a>&nbsp;&nbsp;<img src="images/sep.gif" alt="" />&nbsp;&nbsp;
@@ -172,11 +172,11 @@
           <ul class="posts_list">
             <li>
               <p class="posts_list_pic">
-                <a href="<c:url value='/resources/post.html"><img src="images/post-tn1.jpg" alt="" /></a>
+                <a href="post.html"><img src="images/post-tn1.jpg" alt="" /></a>
               </p>
 
               <p class="posts_list_excerpt">
-                <a href="<c:url value='/resources/post.html"><strong>Praesent vitae velit convallis</strong></a>
+                <a href="post.html"><strong>Praesent vitae velit convallis</strong></a>
                 <br />February 22, 2012
               </p>
             </li>
