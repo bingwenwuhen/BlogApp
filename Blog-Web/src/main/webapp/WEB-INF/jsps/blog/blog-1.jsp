@@ -51,7 +51,7 @@
 </noscript>
 
 <!-- DISPLAY THIS MESSAGE IF USER'S BROWSER IS IE7 OR LOWER -->
-<div id="ie_warning"><img src="images/warning.png" alt="" /><br /><strong>Your browser is out of date!</strong><br /><br />This website uses the latest web technologies so it requires an up-to-date, fast browser!<br />Try <a href="<c:url value='/resources/http://www.mozilla.org/en-US/firefox/new/?from=getfirefox">Firefox</a> or <a href="<c:url value='/resources/https://www.google.com/chrome">Chrome</a>!</div>
+<div id="ie_warning"><img src="images/warning.png" alt="" /><br /><strong>Your browser is out of date!</strong><br /><br />This website uses the latest web technologies so it requires an up-to-date, fast browser!<br />Try <a href="http://www.mozilla.org/en-US/firefox/new/?from=getfirefox">Firefox</a> or <a href="https://www.google.com/chrome">Chrome</a>!</div>
 
 
 <!-- STYLER FOR DEMO -->
@@ -113,11 +113,11 @@
             <h1><a href="post.html">Praesent vitae velit convallis sapien</a></h1>
 
             <p class="blog-info">&nbsp;<img src="images/icon-time.png" alt="" />&nbsp;March 14, 2012&nbsp;
-              <img src="images/sep.gif" alt="" />&nbsp;&nbsp;<img src="images/icon-category.png" alt="" /><a href="<c:url value='/resources/#">News</a>, <a href="<c:url value='/resources/#">Travel</a>&nbsp;&nbsp;<img src="images/sep.gif" alt="" />&nbsp;&nbsp;
+              <img src="images/sep.gif" alt="" />&nbsp;&nbsp;<img src="images/icon-category.png" alt="" /><a href="#">News</a>, <a href="#">Travel</a>&nbsp;&nbsp;<img src="images/sep.gif" alt="" />&nbsp;&nbsp;
               <img src="images/icon-comment.png" alt="" />&nbsp;0 Comment(s)
             </p>
 
-            <p class="blog-small-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel enim sem, in vulputate augue. Praesent vitae velit convallis sapien varius accumsan sit amet eu lacus. <br /><a href="<c:url value='/resources/post.html" class="read_more">Continue reading &rarr;</a></p>
+            <p class="blog-small-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel enim sem, in vulputate augue. Praesent vitae velit convallis sapien varius accumsan sit amet eu lacus. <br /><a href="post.html" class="read_more">Continue reading &rarr;</a></p>
           </div>
         </li>
         <!-- POST SEPARATOR -->
@@ -151,11 +151,11 @@
             <h1><a href="post.html">Vestibulum ante ipsum primis</a></h1>
 
             <p class="blog-info">&nbsp;<img src="images/icon-time.png" alt="" />&nbsp;March 14, 2012&nbsp;
-              <img src="images/sep.gif" alt="" />&nbsp;&nbsp;<img src="images/icon-category.png" alt="" /><a href="<c:url value='/resources/#">News</a>, <a href="<c:url value='/resources/#">Travel</a>&nbsp;&nbsp;<img src="images/sep.gif" alt="" />&nbsp;&nbsp;
+              <img src="images/sep.gif" alt="" />&nbsp;&nbsp;<img src="images/icon-category.png" alt="" /><a href="#">News</a>, <a href="#">Travel</a>&nbsp;&nbsp;<img src="images/sep.gif" alt="" />&nbsp;&nbsp;
               <img src="images/icon-comment.png" alt="" />&nbsp;0 Comment(s)
             </p>
 
-            <p class="blog-small-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel enim sem, in vulputate augue. Praesent vitae velit convallis sapien varius accumsan sit amet eu lacus.  <br /><a href="<c:url value='/resources/post.html" class="read_more">Continue reading &rarr;</a></p>
+            <p class="blog-small-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vel enim sem, in vulputate augue. Praesent vitae velit convallis sapien varius accumsan sit amet eu lacus.  <br /><a href="post.html" class="read_more">Continue reading &rarr;</a></p>
           </div>
         </li>
       </ul><!-- #blog-small ends -->
@@ -290,7 +290,7 @@
     </ul>
 
     <!-- COPYRIGHT TEXT -->
-    <p id="copyright">EMPIRE XHTMLMore Templates <a href="<c:url value='/resources/http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="<c:url value='/resources/http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+    <p id="copyright">EMPIRE XHTMLMore Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
 
   </div><!-- #sidebar ends -->
 
