@@ -10,7 +10,6 @@ import java.util.Date;
  * 文档数据源
  */
 @Data
-@Entity(value = "FileMetaData")
 public class FileMetaData {
 
     /**
@@ -53,16 +52,5 @@ public class FileMetaData {
      * 文件url
      */
     private String url;
-
-    public FileMetaData copy() {
-        FileMetaData metaData = new FileMetaData();
-        metaData.setName(getName());
-        metaData.setType(getType());
-        metaData.setLength(getLength());
-        metaData.setDescription(getDescription());
-        metaData.setCreatedAt(new Date());
-        metaData.setGridsfs(getGridsfs());
-        return metaData;
-    }
 
 }
