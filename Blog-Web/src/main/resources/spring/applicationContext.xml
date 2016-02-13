@@ -14,8 +14,10 @@
     <bean id="eventBus" class="com.google.common.eventbus.AsyncEventBus">
         <constructor-arg ref="executor" />
     </bean>
+
     <bean id="clientEventHandler" class="cn.com.Event.Handler.ClientEventHandler" scope="singleton">
     </bean>
+
     <bean id="taskJob" class="cn.com.quartz.DestoryCacheQuartz">
     </bean>
     <bean id="jobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
