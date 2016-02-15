@@ -17,15 +17,15 @@
   <meta name="description" content="Empire - XHTML Template" />
 
   <!-- CSS -->
-  <link href='fonts/sansation.css' rel="stylesheet" type="text/css" />	<!-- Get any font from here easily: http://www.google.com/webfonts -->
-  <link href="css/style.css" rel="stylesheet" type="text/css" />
-  <link href="fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css" />
-  <link href="css/nivo-slider.css" rel="stylesheet" type="text/css" />
-  <link href="css/styler-farbtastic.css" rel="stylesheet" type="text/css" />
+  <link href="<c:url value='/resources/fonts/sansation.css'/>" rel="stylesheet" type="text/css" />	<!-- Get any font from here easily: http://www.google.com/webfonts -->
+  <link href="<c:url value='/resources/css/style.css'/>" rel="stylesheet" type="text/css" />
+  <link href="<c:url value='/resources/fancybox/jquery.fancybox-1.3.4.css'/>" rel="stylesheet" type="text/css" />
+  <link href="<c:url value='/resources/css/nivo-slider.css'/>" rel="stylesheet" type="text/css" />
+  <link href="<c:url value='/resources/css/styler-farbtastic.css'/>" rel="stylesheet" type="text/css" />
 
   <!-- UPDATE BROWSER WARNING IF IE 7 OR LOWER -->
   <!--[if lt IE 8]>
-  <link href="css/stop_ie.css" rel="stylesheet" type="text/css" />
+  <link href="<c:url value='/resources/css/stop_ie.css'/>" rel="stylesheet" type="text/css" />
   <![endif]-->
 
 
