@@ -30,16 +30,16 @@
 
 
   <!-- JAVASCRIPTS -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
-  <script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-  <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
-  <script type="text/javascript" src="js/jquery.bgslider.js"></script>
-  <script type="text/javascript" src="js/preloader.js"></script>
-  <script type="text/javascript" src="js/farbtastic.js"></script>
-  <script type="text/javascript" src="js/basic.js"></script>
-  <script type="text/javascript" src="js/styler.js"></script>
-  <script type="text/javascript" src="js/contact_form.js"></script>
+  <script type="text/javascript" src="<c:url value='/resources/js/jquery.min.js'/>"></script>
+  <script type="text/javascript" src="<c:url value='/resources/js/jquery-ui-1.8.17.custom.min.js'/>"></script>
+  <script type="text/javascript" src="<c:url value='/resources/fancybox/jquery.fancybox-1.3.4.pack.js'/>"></script>
+  <script type="text/javascript" src="<c:url value='/resources/js/jquery.nivo.slider.js'/>"></script>
+  <script type="text/javascript" src="<c:url value='/resources/js/jquery.bgslider.js'/>"></script>
+  <script type="text/javascript" src="<c:url value='/resources/js/preloader.js'/>"></script>
+  <script type="text/javascript" src="<c:url value='/resources/js/farbtastic.js'/>"></script>
+  <script type="text/javascript" src="<c:url value='/resources/js/basic.js'/>"></script>
+  <script type="text/javascript" src="<c:url value='/resources/js/styler.js'/>"></script>
+  <script type="text/javascript" src="<c:url value='/resources/js/contact_form.js'/>"></script>
 
 
 </head>
