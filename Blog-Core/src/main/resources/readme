@@ -1,0 +1,3 @@
+spring整合ehcache后主要有两个注解使用：
+@Cacheabele      ：指定方法使用缓存
+@TriggersRemove  ：从缓存中移除对象
