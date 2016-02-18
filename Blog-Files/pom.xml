@@ -43,6 +43,10 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
         </dependency>
-
+        <!--Blog-core-->
+        <dependency>
+            <groupId>cn.com</groupId>
+            <artifactId>Blog-Core</artifactId>
+        </dependency>
     </dependencies>
 </project>
