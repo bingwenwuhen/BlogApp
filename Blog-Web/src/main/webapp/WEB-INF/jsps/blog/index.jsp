@@ -201,7 +201,7 @@
 
       <!-- LOGO -->
       <div id="logo">
-        <a href="index.html"><img src="images/logo.png" alt="" /></a>
+        <a href="index.html"><img src="<c:url value='/resources/images/logo.png'/>" alt="" /></a>
       </div>
 
       <!-- MENU -->
