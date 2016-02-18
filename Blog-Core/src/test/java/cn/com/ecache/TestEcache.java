@@ -17,5 +17,6 @@ public class TestEcache {
         Element pwElement = new Element("password", "xiaxuan");
         cache.put(lgElement);
         cache.put(pwElement);
+        System.out.println(cache.get("loginName"));
     }
 }
